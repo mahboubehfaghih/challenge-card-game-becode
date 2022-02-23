@@ -18,8 +18,8 @@ class Card(Symbol):
          #b= Card.suits[self.suit]
          #c=Card.colors[self.color] 
          #return a,b,c
-          #return Card.ranks[self.rank] , Card.suits[self.suit] , Card.colors[self.color]
-         # return '%s %s %s' % (Card.ranks[self.rank] , Card.suits[self.suit], Card.colors[self.color])  
+          #return f"{ Card.ranks[self.rank] , Card.suits[self.suit] , self.color}" 
+         # return '%s %s %s' % (Card.ranks[self.rank] , Card.suits[self.suit], Card.colors[self.color])   
      
     def __lt__(self, other):
         if self.rank == other.rank:
